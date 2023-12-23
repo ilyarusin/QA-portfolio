@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "2d86100c-9bc3-4a1f-aa69-8b4df9cf98cc",
+		"name": "Chuck Norris Jokes API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23573632"
+	},
+	"item": [
+		{
+			"name": "Random dev joke",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.chucknorris.io/jokes/random?category=dev",
+					"protocol": "https",
+					"host": [
+						"api",
+						"chucknorris",
+						"io"
+					],
+					"path": [
+						"jokes",
+						"random"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "dev"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
