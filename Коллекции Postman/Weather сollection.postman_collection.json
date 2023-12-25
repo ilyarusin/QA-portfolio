@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "e4e8b081-368a-46f9-897e-4ebc54bcac26",
+		"name": "Weather сollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23573632"
+	},
+	"item": [
+		{
+			"name": "Rostov-on-Don",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?lat=47.23791304906037&lon=39.699453445981405&appid=122cb997388c481c4a1fce40325f5cc5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "47.23791304906037"
+						},
+						{
+							"key": "lon",
+							"value": "39.699453445981405"
+						},
+						{
+							"key": "appid",
+							"value": "122cb997388c481c4a1fce40325f5cc5"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Rostov-on-Don",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.openweathermap.org/data/2.5/weather?lat=47.23791304906037&lon=39.699453445981405&appid=122cb997388c481c4a1fce40325f5cc5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "47.23791304906037"
+								},
+								{
+									"key": "lon",
+									"value": "39.699453445981405"
+								},
+								{
+									"key": "appid",
+									"value": "122cb997388c481c4a1fce40325f5cc5"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "openresty"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 25 Dec 2023 15:29:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "505"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Cache-Key",
+							"value": "/data/2.5/weather?lat=47.24&lon=39.7"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"coord\": {\n        \"lon\": 39.6995,\n        \"lat\": 47.2379\n    },\n    \"weather\": [\n        {\n            \"id\": 500,\n            \"main\": \"Rain\",\n            \"description\": \"light rain\",\n            \"icon\": \"10n\"\n        }\n    ],\n    \"base\": \"stations\",\n    \"main\": {\n        \"temp\": 277.15,\n        \"feels_like\": 273.06,\n        \"temp_min\": 277.14,\n        \"temp_max\": 277.4,\n        \"pressure\": 1002,\n        \"humidity\": 99\n    },\n    \"visibility\": 1691,\n    \"wind\": {\n        \"speed\": 5.36,\n        \"deg\": 190,\n        \"gust\": 0\n    },\n    \"rain\": {\n        \"1h\": 0.56\n    },\n    \"clouds\": {\n        \"all\": 100\n    },\n    \"dt\": 1703518147,\n    \"sys\": {\n        \"type\": 2,\n        \"id\": 2000995,\n        \"country\": \"RU\",\n        \"sunrise\": 1703480795,\n        \"sunset\": 1703511317\n    },\n    \"timezone\": 10800,\n    \"id\": 501175,\n    \"name\": \"Rostov-on-Don\",\n    \"cod\": 200\n}"
+				}
+			]
+		}
+	]
+}
